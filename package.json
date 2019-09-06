@@ -9,7 +9,10 @@
     "prod": "rimraf dist && cross-env NODE_ENV=production webpack --progress --colors",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register \"test/**/*.ts\"",
     "build:win": "electron-builder build --win --x64",
-    "build:mac": "electron-builder build --mac --x64"
+    "build:mac": "electron-builder build --mac --x64", 
+    "build:wrair-appimage": "electron-builder build --linux AppImage --x64", 
+    "build:wrair-default": "electron-builder build --linux --x64",
+    "build:win-portable": "electron-builder build --win portable --x64"
   },
   "build": {
     "appId": "com.devtography.electron_boilerplate",
